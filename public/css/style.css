@@ -1,0 +1,35 @@
+/* Configurar Css AdminLTE */
+.flex-icon {
+    display: flex !important;
+}
+.select2-container {
+    width: 100% !important;
+}
+
+.skin-blue .main-header li.user-header,
+.skin-blue .main-header .logo,
+.skin-blue .main-header .navbar {
+    background: var(--persian-green) !important;
+}
+
+.main-sidebar {
+    background: var(--middle-green) !important;
+}
+
+.skin-blue .sidebar-menu > li.active > a {
+    background: var(--middle-green) !important;
+    border-left-color: var(--middle-green-yellow) !important;
+}
+
+.skin-blue .sidebar-menu > li.header {
+    background: var(--kombu-green) !important;
+    color: var(--white) !important;
+}
+
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer {
+    background: var(--middle-green) !important;
+}
+.skin-blue .sidebar-menu > li > a:hover {
+    background: var(--persian-green) !important;
+    border-left-color: var(--kombu-green) !important;
+}
