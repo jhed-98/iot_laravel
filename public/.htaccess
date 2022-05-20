@@ -6,8 +6,8 @@
     RewriteEngine On
 
      # FORCE HTTPS
-     RewriteCond %{HTTP:X-Forwarded-Proto} =http
-     RewriteRule .* https://%{HTTP:Host}%{REQUEST_URI} [L,R=permanent]
+    #  RewriteCond %{HTTP:X-Forwarded-Proto} =http
+    #  RewriteRule .* https://%{HTTP:Host}%{REQUEST_URI} [L,R=permanent]
      
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
