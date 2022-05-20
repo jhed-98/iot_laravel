@@ -53,7 +53,7 @@
             <div class="row justify-content-center h-100">
                 <div class="card-wrapper">
                     <div class="brand bg-white">
-                        <img class="p-3" src="{{ asset('icons/iot-avocado.png') }}" alt="IOT">
+                        <img class="p-3" src="{{ asset('img/iot-avocado.png') }}" alt="IOT">
                     </div>
                     <div class="card fat">
                         <div class="card-body">

@@ -8,7 +8,7 @@
         <!-- logo for regular state and mobile devices -->
         <span class="logo-lg flex-icon">
             <b>
-                <img src="{{ asset('icons/iot-avocado.png') }}" width="50" height="50" />
+                <img src="{{ asset('img/iot-avocado.png') }}" width="50" height="50" />
             </b>IOT</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
@@ -26,9 +26,9 @@
                         {{-- <img src="{{ asset('admin/dist/img/user2-160x160.jpg') }}" class="user-image"
                             alt="User Image"> --}}
                         @if (Auth::user()->gender == '1')
-                            <img src=" {{ asset('icons/avatar-man.jpg') }}" class="user-image" alt="User Image">
+                            <img src=" {{ asset('img/avatar-man.jpg') }}" class="user-image" alt="User Image">
                         @else
-                            <img src=" {{ asset('icons/avatar-woman.jpg') }}" class="user-image" alt="User Image">
+                            <img src=" {{ asset('img/avatar-woman.jpg') }}" class="user-image" alt="User Image">
                         @endif
 
 
@@ -42,10 +42,9 @@
                             {{-- <img src="{{ asset('admin/dist/img/user2-160x160.jpg') }}" class="img-circle"
                                 alt="User Image"> --}}
                             @if (Auth::user()->gender == '1')
-                                <img src=" {{ asset('icons/avatar-man.jpg') }}" class="user-image"
-                                    alt="User Image">
+                                <img src=" {{ asset('img/avatar-man.jpg') }}" class="user-image" alt="User Image">
                             @else
-                                <img src=" {{ asset('icons/avatar-woman.jpg') }}" class="user-image"
+                                <img src=" {{ asset('img/avatar-woman.jpg') }}" class="user-image"
                                     alt="User Image">
                             @endif
 
@@ -88,9 +87,9 @@
             <div class="pull-left image">
                 {{-- <img src="{{ asset('admin/dist/img/user2-160x160.jpg') }}" class="img-circle" alt="User Image"> --}}
                 @if (Auth::user()->gender == '1')
-                    <img src="{{ asset('icons/avatar-man.jpg') }}" class="img-circle" alt="User Image">
+                    <img src="{{ asset('img/avatar-man.jpg') }}" class="img-circle" alt="User Image">
                 @else
-                    <img src="{{ asset('icons/avatar-woman.jpg') }}" class="img-circle" alt="User Image">
+                    <img src="{{ asset('img/avatar-woman.jpg') }}" class="img-circle" alt="User Image">
                 @endif
             </div>
             <div class="pull-left info">

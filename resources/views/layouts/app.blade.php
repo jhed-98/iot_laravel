@@ -9,7 +9,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- ICONS -->
-    <link rel="icon" href="{{ asset('icons/iot-avocado.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('img/iot-avocado.png') }}" type="image/x-icon">
     <!-- FONTAWESOME  -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" crossorigin="anonymous">
 
