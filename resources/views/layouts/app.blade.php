@@ -62,7 +62,8 @@
 
 
 <body class="hold-transition skin-blue sidebar-mini">
-    {{-- <x-jet-banner /> --}}
+    <x-jet-banner />
+    <x-banner />
 
     <div class="wrapper">
         @livewire('navigation-menu')

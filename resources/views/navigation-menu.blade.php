@@ -115,6 +115,25 @@
                         <span>Producción</span>
                     </a>
                 </x-dropdown-link-li>
+
+                <li class="treeview {{ request()->routeIs('reports.*') ? 'active' : '' }}">
+                    <a href="#">
+                        <i class="fa fa-laptop"></i>
+                        <span>Reports</span>
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class="{{ request()->routeIs('reports.abono.*') ? 'active' : '' }}"><a
+                                href="{{ route('reports.abono.index') }}"><i class="fa fa-circle-o"></i> Report Abono</a>
+                        </li>
+                        <li class="{{ request()->routeIs('reports.riego.*') ? 'active' : '' }}"><a
+                                href="{{ route('reports.riego.index') }}"><i class="fa fa-circle-o"></i> Report Riego</a>
+                        </li>
+
+                    </ul>
+                </li>
             @endrole
 
             @role('admin')

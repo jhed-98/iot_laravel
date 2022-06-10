@@ -10,6 +10,7 @@ class Dashboard extends Component
 {
     public function render()
     {
+
         $h1 = "Dashboard";
         $small = "Control panel";
 

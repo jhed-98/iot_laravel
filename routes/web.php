@@ -1,8 +1,11 @@
 <?php
 
+use App\Http\Controllers\Admin\AbonoController;
 use App\Http\Controllers\Admin\PersonController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\RiegoController;
 use App\Http\Controllers\Admin\SensorController;
+use App\Http\Controllers\WelcomeController;
 use App\Http\Livewire\Admin\Dashboard;
 use Illuminate\Support\Facades\Route;
 
@@ -22,12 +25,17 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/', Dashboard::class)->name('principal');
+    // Route::get('/', Dashboard::class)->name('principal');
+    Route::get('/', WelcomeController::class)->name('principal');
 
     Route::get('persons', [PersonController::class, 'index'])->name('persons.index');
     Route::get('produccion', [ProductController::class, 'index'])->name('productos.index');
     Route::get('sensores', [SensorController::class, 'index'])->name('sensores.index');
     Route::post('sensor/humedad/all', [SensorController::class, 'humedad_all'])->name('sensores.humedad');
+
+
+    Route::get('report-abono', [AbonoController::class, 'index'])->name('reports.abono.index');
+    Route::get('report-riego', [RiegoController::class, 'index'])->name('reports.riego.index');
 });
 
 

@@ -25,6 +25,9 @@ class CreateSensorsTable extends Migration
             // $table->enum('station', [Sensor::EST_1, Sensor::EST_2, Sensor::EST_3, Sensor::EST_4])->default(Sensor::EST_ERROR); //estación
             $table->integer('station')->default(Sensor::EST_ERROR); //estación
 
+            $table->integer('status_alkalinity')->default(0); //0 false -- 1 true
+            $table->integer('status_humidity')->default(0); //0 false -- 1 true
+
             $table->timestamps();
         });
     }
