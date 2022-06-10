@@ -1,6 +1,6 @@
 <header class="main-header" style="background: #207cb4">
     <!-- Logo -->
-    <a href="/dashboard" class="logo">
+    <a href="/" class="logo">
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>
                 IOT

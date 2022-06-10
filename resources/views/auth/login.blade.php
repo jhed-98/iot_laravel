@@ -103,12 +103,12 @@
                                         {{-- <a href="forgot.html" class="float-right">
                                             Forgot Password?
                                         </a> --}}
-                                        @if (Route::has('password.request'))
+                                        {{-- @if (Route::has('password.request'))
                                             <a class="float-right underline text-sm text-gray-600 hover:text-gray-900"
                                                 href="{{ route('password.request') }}">
                                                 {{ __('Forgot your password?') }}
                                             </a>
-                                        @endif
+                                        @endif --}}
                                     </label>
                                     {{-- <input id="password" type="password" class="form-control" name="password" required
                                         autocomplete="current-password" data-eye> --}}
@@ -127,7 +127,7 @@
                                     @endif
                                 </div>
 
-                                <div class="form-group">
+                                {{-- <div class="form-group">
                                     <div class="custom-checkbox custom-control">
                                         <input type="checkbox" name="remember_me" id="remember"
                                             class="custom-control-input">
@@ -135,7 +135,7 @@
                                             class="custom-control-label">{{ __('Remember me') }}</label>
 
                                     </div>
-                                </div>
+                                </div> --}}
 
                                 <div class="form-group m-0">
                                     <button type="submit" class="btn btn-primary btn-block">
