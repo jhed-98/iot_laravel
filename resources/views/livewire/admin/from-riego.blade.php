@@ -38,6 +38,7 @@ use App\Models\Fertilizer;
                             <tr>
                                 <th>ID</th>
                                 <th>Nivel humidity</th>
+                                <th>Estacion</th>
                                 <th>Fecha </th>
                                 <th>Options</th>
                             </tr>
@@ -47,6 +48,29 @@ use App\Models\Fertilizer;
                                     <td>{{ $item->id }}</td>
 
                                     <td> {{ $item->humidity }} </td>
+                                    @switch($item->station)
+                                        @case(0)
+                                            <td><span class="label label-danger">ERROR</span></td>
+                                        @break
+
+                                        @case(1)
+                                            <td><span class="label label-success">Estación 1</span></td>
+                                        @break
+
+                                        @case(2)
+                                            <td><span class="label label-success">Estación 2</span></td>
+                                        @break
+
+                                        @case(3)
+                                            <td><span class="label label-success">Estación 3</span></td>
+                                        @break
+
+                                        @case(4)
+                                            <td><span class="label label-success">Estación 4</span></td>
+                                        @break
+
+                                        @default
+                                    @endswitch
                                     <td>
                                         @if (Fertilizer::where('sensor_id', $item->id)->first())
                                             <div class="flex flex-col">
