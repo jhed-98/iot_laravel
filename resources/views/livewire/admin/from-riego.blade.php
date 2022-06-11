@@ -260,7 +260,7 @@ use App\Models\Fertilizer;
         <x-dialog-modal-small wire:model="editForm.open">
 
             <x-slot name="title">
-                Editar Dato de Abono
+                Editar Dato de Riego
             </x-slot>
 
             <x-slot name="content">
